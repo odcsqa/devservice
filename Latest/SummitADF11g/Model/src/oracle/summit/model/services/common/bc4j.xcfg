@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<BC4JConfig version="11.1" xmlns="http://xmlns.oracle.com/bc4j/configuration">
+   <AppModuleConfigBag ApplicationName="oracle.summit.model.services.SummitAppModule">
+      <AppModuleConfig DeployPlatform="LOCAL" jbo.project="oracle.summit.model.Model" name="SummitAppModuleLocal" ApplicationName="oracle.summit.model.services.SummitAppModule">
+         <Database jbo.TypeMapEntries="Java"/>
+         <Security AppModuleJndiName="oracle.summit.model.services.SummitAppModule"/>
+         <Custom JDBCDataSource="db1"/>
+      </AppModuleConfig>
+      <AppModuleConfig DeployPlatform="LOCAL" jbo.project="oracle.summit.model.Model" name="SummitAppModuleShared" ApplicationName="oracle.summit.model.services.SummitAppModule">
+         <AM-Pooling jbo.ampool.dynamicjdbccredentials="false" jbo.ampool.isuseexclusive="false" jbo.ampool.maxpoolsize="1" jbo.ampool.resetnontransactionalstate="false"/>
+         <Database jbo.TypeMapEntries="Java"/>
+         <Security AppModuleJndiName="oracle.summit.model.services.SummitAppModule"/>
+         <Custom JDBCDataSource="db1"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <AppModuleConfigBag ApplicationName="oracle.summit.model.services.CustomerSelfServiceAppModule">
+      <AppModuleConfig DeployPlatform="LOCAL" jbo.project="oracle.summit.model.Model" name="CustomerSelfServiceLocal" ApplicationName="oracle.summit.model.services.CustomerSelfServiceAppModule">
+         <Database jbo.TypeMapEntries="Java"/>
+         <Security AppModuleJndiName="oracle.summit.model.services.CustomerSelfServiceAppModule"/>
+         <Custom JDBCDataSource="db1"/>
+      </AppModuleConfig>
+      <AppModuleConfig DeployPlatform="LOCAL" jbo.project="oracle.summit.model.Model" name="CustomerSelfServiceShared" ApplicationName="oracle.summit.model.services.CustomerSelfServiceAppModule">
+         <AM-Pooling jbo.ampool.dynamicjdbccredentials="false" jbo.ampool.isuseexclusive="false" jbo.ampool.maxpoolsize="1" jbo.ampool.resetnontransactionalstate="false"/>
+         <Database jbo.TypeMapEntries="Java"/>
+         <Security AppModuleJndiName="oracle.summit.model.services.CustomerSelfServiceAppModule"/>
+         <Custom JDBCDataSource="db1"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+   <AppModuleConfigBag ApplicationName="oracle.summit.model.services.BackOfficeAppModule">
+      <AppModuleConfig DeployPlatform="LOCAL" jbo.project="oracle.summit.model.Model" name="BackOfficeAppModuleLocal" ApplicationName="oracle.summit.model.services.BackOfficeAppModule">
+         <Database jbo.TypeMapEntries="Java"/>
+         <Security AppModuleJndiName="oracle.summit.model.services.BackOfficeAppModule"/>
+         <Custom JDBCDataSource="db1"/>
+      </AppModuleConfig>
+      <AppModuleConfig DeployPlatform="LOCAL" jbo.project="oracle.summit.model.Model" name="BackOfficeAppModuleShared" ApplicationName="oracle.summit.model.services.BackOfficeAppModule">
+         <AM-Pooling jbo.ampool.dynamicjdbccredentials="false" jbo.ampool.isuseexclusive="false" jbo.ampool.maxpoolsize="1" jbo.ampool.resetnontransactionalstate="false"/>
+         <Database jbo.TypeMapEntries="Java"/>
+         <Security AppModuleJndiName="oracle.summit.model.services.BackOfficeAppModule"/>
+         <Custom JDBCDataSource="db1"/>
+      </AppModuleConfig>
+   </AppModuleConfigBag>
+</BC4JConfig>

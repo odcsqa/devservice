@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <view id="index">
+    <page>/index.jspx</page>
+  </view>
+  <task-flow-call id="parentTF">
+    <task-flow-reference>
+      <document>/WEB-INF/parentTF.xml</document>
+      <id>parentTF</id>
+    </task-flow-reference>
+  </task-flow-call>
+  <control-flow-rule id="__1">
+    <from-activity-id id="__2">index</from-activity-id>
+    <control-flow-case id="__4">
+      <from-outcome id="__5">start</from-outcome>
+      <to-activity-id id="__3">parentTF</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+  <control-flow-rule id="__6">
+    <from-activity-id id="__7">parentTF</from-activity-id>
+    <control-flow-case id="__9">
+      <from-outcome id="__10">exit</from-outcome>
+      <to-activity-id id="__8">index</to-activity-id>
+    </control-flow-case>
+  </control-flow-rule>
+</adfc-config>

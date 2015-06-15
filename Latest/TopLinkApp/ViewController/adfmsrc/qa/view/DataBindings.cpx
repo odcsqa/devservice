@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Application xmlns="http://xmlns.oracle.com/adfm/application"
+             version="11.1.1.61.92" id="DataBindings" SeparateXMLFiles="false"
+             Package="qa.view" ClientType="Generic">
+  <pageMap>
+    <page path="/view1.jspx" usageId="qa_view_view1PageDef"/>
+  </pageMap>
+  <pageDefinitionUsages>
+    <page id="qa_view_view1PageDef" path="qa.view.pageDefs.view1PageDef"/>
+  </pageDefinitionUsages>
+  <dataControlUsages>
+    <dc id="JavaServiceFacade" path="qa.model.JavaServiceFacade"/>
+  </dataControlUsages>
+</Application>

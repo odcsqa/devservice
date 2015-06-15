@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<jsp:root xmlns:jsp="http://java.sun.com/JSP/Page" version="2.1"
+          xmlns:f="http://java.sun.com/jsf/core"
+          xmlns:h="http://java.sun.com/jsf/html"
+          xmlns:af="http://xmlns.oracle.com/adf/faces/rich">
+  <jsp:directive.page contentType="text/html;charset=UTF-8"/>
+  <f:view>
+    <af:document id="d1">
+      <af:messages id="m1"/>
+      <af:form id="f1">
+        <af:panelFormLayout id="pfl1">
+          <af:inputText value="#{bindings.Deptno.inputValue}"
+                        label="#{bindings.Deptno.hints.label}"
+                        required="#{bindings.Deptno.hints.mandatory}"
+                        columns="#{bindings.Deptno.hints.displayWidth}"
+                        maximumLength="#{bindings.Deptno.hints.precision}"
+                        shortDesc="#{bindings.Deptno.hints.tooltip}" id="it3">
+            <f:validator binding="#{bindings.Deptno.validator}"/>
+            <af:convertNumber groupingUsed="false"
+                              pattern="#{bindings.Deptno.format}"/>
+          </af:inputText>
+          <af:inputText value="#{bindings.Dname.inputValue}"
+                        label="#{bindings.Dname.hints.label}"
+                        required="#{bindings.Dname.hints.mandatory}"
+                        columns="#{bindings.Dname.hints.displayWidth}"
+                        maximumLength="#{bindings.Dname.hints.precision}"
+                        shortDesc="#{bindings.Dname.hints.tooltip}" id="it2">
+            <f:validator binding="#{bindings.Dname.validator}"/>
+          </af:inputText>
+          <af:inputText value="#{bindings.Loc.inputValue}"
+                        label="#{bindings.Loc.hints.label}"
+                        required="#{bindings.Loc.hints.mandatory}"
+                        columns="#{bindings.Loc.hints.displayWidth}"
+                        maximumLength="#{bindings.Loc.hints.precision}"
+                        shortDesc="#{bindings.Loc.hints.tooltip}" id="it1">
+            <f:validator binding="#{bindings.Loc.validator}"/>
+          </af:inputText>
+          <f:facet name="footer">
+            <af:panelGroupLayout layout="vertical" id="pgl1">
+              <af:panelGroupLayout layout="horizontal" id="pgl2">
+                <af:commandButton actionListener="#{bindings.First.execute}"
+                                  text="First"
+                                  disabled="#{!bindings.First.enabled}"
+                                  partialSubmit="true" id="cb5"/>
+                <af:commandButton actionListener="#{bindings.Previous.execute}"
+                                  text="Previous"
+                                  disabled="#{!bindings.Previous.enabled}"
+                                  partialSubmit="true" id="cb3"/>
+                <af:commandButton actionListener="#{bindings.Next.execute}"
+                                  text="Next"
+                                  disabled="#{!bindings.Next.enabled}"
+                                  partialSubmit="true" id="cb2"/>
+                <af:commandButton actionListener="#{bindings.Last.execute}"
+                                  text="Last"
+                                  disabled="#{!bindings.Last.enabled}"
+                                  partialSubmit="true" id="cb1"/>
+              </af:panelGroupLayout>
+              <af:commandButton text="Submit" id="cb4"/>
+            </af:panelGroupLayout>
+          </f:facet>
+        </af:panelFormLayout>
+        <af:table value="#{bindings.EmpView2.collectionModel}" var="row"
+                  rows="#{bindings.EmpView2.rangeSize}"
+                  emptyText="#{bindings.EmpView2.viewable ? 'No data to display.' : 'Access Denied.'}"
+                  fetchSize="#{bindings.EmpView2.rangeSize}"
+                  rowBandingInterval="0"
+                  selectedRowKeys="#{bindings.EmpView2.collectionModel.selectedRow}"
+                  selectionListener="#{bindings.EmpView2.collectionModel.makeCurrent}"
+                  rowSelection="single" id="t1" partialTriggers="::cb7">
+          <af:column sortProperty="#{bindings.EmpView2.hints.Empno.name}"
+                     sortable="false"
+                     headerText="#{bindings.EmpView2.hints.Empno.label}"
+                     id="c2">
+            <af:inputText value="#{row.bindings.Empno.inputValue}"
+                          label="#{bindings.EmpView2.hints.Empno.label}"
+                          required="#{bindings.EmpView2.hints.Empno.mandatory}"
+                          columns="#{bindings.EmpView2.hints.Empno.displayWidth}"
+                          maximumLength="#{bindings.EmpView2.hints.Empno.precision}"
+                          shortDesc="#{bindings.EmpView2.hints.Empno.tooltip}"
+                          id="it5">
+              <f:validator binding="#{row.bindings.Empno.validator}"/>
+              <af:convertNumber groupingUsed="false"
+                                pattern="#{bindings.EmpView2.hints.Empno.format}"/>
+            </af:inputText>
+          </af:column>
+          <af:column sortProperty="#{bindings.EmpView2.hints.Ename.name}"
+                     sortable="false"
+                     headerText="#{bindings.EmpView2.hints.Ename.label}"
+                     id="c8">
+            <af:inputText value="#{row.bindings.Ename.inputValue}"
+                          label="#{bindings.EmpView2.hints.Ename.label}"
+                          required="#{bindings.EmpView2.hints.Ename.mandatory}"
+                          columns="#{bindings.EmpView2.hints.Ename.displayWidth}"
+                          maximumLength="#{bindings.EmpView2.hints.Ename.precision}"
+                          shortDesc="#{bindings.EmpView2.hints.Ename.tooltip}"
+                          id="it7">
+              <f:validator binding="#{row.bindings.Ename.validator}"/>
+            </af:inputText>
+          </af:column>
+          <af:column sortProperty="#{bindings.EmpView2.hints.Job.name}"
+                     sortable="false"
+                     headerText="#{bindings.EmpView2.hints.Job.label}" id="c6">
+            <af:inputText value="#{row.bindings.Job.inputValue}"
+                          label="#{bindings.EmpView2.hints.Job.label}"
+                          required="#{bindings.EmpView2.hints.Job.mandatory}"
+                          columns="#{bindings.EmpView2.hints.Job.displayWidth}"
+                          maximumLength="#{bindings.EmpView2.hints.Job.precision}"
+                          shortDesc="#{bindings.EmpView2.hints.Job.tooltip}"
+                          id="it9">
+              <f:validator binding="#{row.bindings.Job.validator}"/>
+            </af:inputText>
+          </af:column>
+          <af:column sortProperty="#{bindings.EmpView2.hints.Mgr.name}"
+                     sortable="false"
+                     headerText="#{bindings.EmpView2.hints.Mgr.label}" id="c4">
+            <af:inputText value="#{row.bindings.Mgr.inputValue}"
+                          label="#{bindings.EmpView2.hints.Mgr.label}"
+                          required="#{bindings.EmpView2.hints.Mgr.mandatory}"
+                          columns="#{bindings.EmpView2.hints.Mgr.displayWidth}"
+                          maximumLength="#{bindings.EmpView2.hints.Mgr.precision}"
+                          shortDesc="#{bindings.EmpView2.hints.Mgr.tooltip}"
+                          id="it10">
+              <f:validator binding="#{row.bindings.Mgr.validator}"/>
+              <af:convertNumber groupingUsed="false"
+                                pattern="#{bindings.EmpView2.hints.Mgr.format}"/>
+            </af:inputText>
+          </af:column>
+          <af:column sortProperty="#{bindings.EmpView2.hints.Hiredate.name}"
+                     sortable="false"
+                     headerText="#{bindings.EmpView2.hints.Hiredate.label}"
+                     id="c3">
+            <af:inputDate value="#{row.bindings.Hiredate.inputValue}"
+                          label="#{bindings.EmpView2.hints.Hiredate.label}"
+                          required="#{bindings.EmpView2.hints.Hiredate.mandatory}"
+                          shortDesc="#{bindings.EmpView2.hints.Hiredate.tooltip}"
+                          id="id1">
+              <f:validator binding="#{row.bindings.Hiredate.validator}"/>
+              <af:convertDateTime pattern="#{bindings.EmpView2.hints.Hiredate.format}"/>
+            </af:inputDate>
+          </af:column>
+          <af:column sortProperty="#{bindings.EmpView2.hints.Sal.name}"
+                     sortable="false"
+                     headerText="#{bindings.EmpView2.hints.Sal.label}" id="c5">
+            <af:inputText value="#{row.bindings.Sal.inputValue}"
+                          label="#{bindings.EmpView2.hints.Sal.label}"
+                          required="#{bindings.EmpView2.hints.Sal.mandatory}"
+                          columns="#{bindings.EmpView2.hints.Sal.displayWidth}"
+                          maximumLength="#{bindings.EmpView2.hints.Sal.precision}"
+                          shortDesc="#{bindings.EmpView2.hints.Sal.tooltip}"
+                          id="it8">
+              <f:validator binding="#{row.bindings.Sal.validator}"/>
+              <af:convertNumber groupingUsed="false"
+                                pattern="#{bindings.EmpView2.hints.Sal.format}"/>
+            </af:inputText>
+          </af:column>
+          <af:column sortProperty="#{bindings.EmpView2.hints.Comm.name}"
+                     sortable="false"
+                     headerText="#{bindings.EmpView2.hints.Comm.label}" id="c7">
+            <af:inputText value="#{row.bindings.Comm.inputValue}"
+                          label="#{bindings.EmpView2.hints.Comm.label}"
+                          required="#{bindings.EmpView2.hints.Comm.mandatory}"
+                          columns="#{bindings.EmpView2.hints.Comm.displayWidth}"
+                          maximumLength="#{bindings.EmpView2.hints.Comm.precision}"
+                          shortDesc="#{bindings.EmpView2.hints.Comm.tooltip}"
+                          id="it4">
+              <f:validator binding="#{row.bindings.Comm.validator}"/>
+              <af:convertNumber groupingUsed="false"
+                                pattern="#{bindings.EmpView2.hints.Comm.format}"/>
+            </af:inputText>
+          </af:column>
+          <af:column sortProperty="#{bindings.EmpView2.hints.Deptno.name}"
+                     sortable="false"
+                     headerText="#{bindings.EmpView2.hints.Deptno.label}"
+                     id="c1">
+            <af:inputText value="#{row.bindings.Deptno.inputValue}"
+                          label="#{bindings.EmpView2.hints.Deptno.label}"
+                          required="#{bindings.EmpView2.hints.Deptno.mandatory}"
+                          columns="#{bindings.EmpView2.hints.Deptno.displayWidth}"
+                          maximumLength="#{bindings.EmpView2.hints.Deptno.precision}"
+                          shortDesc="#{bindings.EmpView2.hints.Deptno.tooltip}"
+                          id="it6">
+              <f:validator binding="#{row.bindings.Deptno.validator}"/>
+              <af:convertNumber groupingUsed="false"
+                                pattern="#{bindings.EmpView2.hints.Deptno.format}"/>
+            </af:inputText>
+          </af:column>
+        </af:table>
+        <af:commandButton actionListener="#{bindings.CreateInsert.execute}"
+                          text="CreateInsertDept"
+                          disabled="#{!bindings.CreateInsert.enabled}"
+                          id="cb6"/>
+        <af:commandButton actionListener="#{bindings.CreateInsert1.execute}"
+                          text="CreateInsertEmp"
+                          disabled="#{!bindings.CreateInsert1.enabled}"
+                          id="cb7"/>
+        <af:commandButton actionListener="#{bindings.Commit.execute}"
+                          text="Commit" disabled="#{!bindings.Commit.enabled}"
+                          id="cb8"/>
+        <af:commandButton actionListener="#{bindings.Rollback.execute}"
+                          text="Rollback"
+                          disabled="#{!bindings.Rollback.enabled}"
+                          immediate="true" id="cb9">
+          <af:resetActionListener/>
+        </af:commandButton>
+        <af:commandButton text="go child taskflow" id="cb10" action="gochild"/>
+        <af:commandButton text="go back" id="cb11" action="exit"/>
+      </af:form>
+    </af:document>
+  </f:view>
+</jsp:root>

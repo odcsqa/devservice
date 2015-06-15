@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="Cp1252"?>
+<project type="relational">
+   <name>tlMap</name>
+   <product-version>11.1.1.7.40.65.57.5</product-version>
+   <schema-version>8.0</schema-version>
+   <deploymentPlatform>ECLIPSELINK</deploymentPlatform>
+   <descriptor-names>
+      <descriptor-name>pj.Dept</descriptor-name>
+      <descriptor-name>pj.Emp</descriptor-name>
+   </descriptor-names>
+   <defaults-policy type="relational">
+      <use-method-accessing>false</use-method-accessing>
+      <caching-policy>
+         <cache-expiry/>
+      </caching-policy>
+      <cache-all-statements>false</cache-all-statements>
+      <bind-all-parameters>true</bind-all-parameters>
+   </defaults-policy>
+   <ejb-policy>
+      <ejb-persistence-type>No EJB</ejb-persistence-type>
+   </ejb-policy>
+   <deployment-xml-path>META-INF/</deployment-xml-path>
+   <database>
+      <platform-name>Oracle11</platform-name>
+      <deployment-login>
+         <driver-class>oracle.jdbc.OracleDriver</driver-class>
+         <url>jdbc:oracle:thin:@stank02.us.oracle.com:1521:adt1116</url>
+         <user-name>amujuri</user-name>
+         <password>26A3581EC4B9A17DD62D1A19DF561D1E</password>
+         <save-password>true</save-password>
+      </deployment-login>
+      <development-login>DATABASE1</development-login>
+   </database>
+   <sequencing>
+      <preallocation-size>50</preallocation-size>
+   </sequencing>
+   <table-generation>
+      <default-primary-key-name>ID</default-primary-key-name>
+      <primary-key-search-pattern>*ID</primary-key-search-pattern>
+   </table-generation>
+</project>

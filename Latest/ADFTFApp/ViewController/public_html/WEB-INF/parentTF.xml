@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<adfc-config xmlns="http://xmlns.oracle.com/adf/controller" version="1.2">
+  <task-flow-definition id="parentTF">
+    <default-activity id="__1">parentView</default-activity>
+    <transaction id="__16">
+      <new-transaction/>
+    </transaction>
+    <view id="parentView">
+      <page>/parentView.jspx</page>
+    </view>
+    <task-flow-return id="taskFlowReturn1">
+      <outcome id="__2">
+        <name>exit</name>
+        <rollback/>
+      </outcome>
+    </task-flow-return>
+    <task-flow-call id="childTF">
+      <task-flow-reference>
+        <document>/WEB-INF/childTF.xml</document>
+        <id>childTF</id>
+      </task-flow-reference>
+    </task-flow-call>
+    <control-flow-rule id="__3">
+      <from-activity-id id="__4">parentView</from-activity-id>
+      <control-flow-case id="__6">
+        <from-outcome id="__7">exit</from-outcome>
+        <to-activity-id id="__5">taskFlowReturn1</to-activity-id>
+      </control-flow-case>
+      <control-flow-case id="__9">
+        <from-outcome id="__10">gochild</from-outcome>
+        <to-activity-id id="__8">childTF</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+    <control-flow-rule id="__11">
+      <from-activity-id id="__12">childTF</from-activity-id>
+      <control-flow-case id="__13">
+        <from-outcome id="__15">back</from-outcome>
+        <to-activity-id id="__14">parentView</to-activity-id>
+      </control-flow-case>
+    </control-flow-rule>
+  </task-flow-definition>
+</adfc-config>

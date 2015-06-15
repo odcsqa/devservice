@@ -1,0 +1,677 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<table xmlns="http://xmlns.oracle.com/jdeveloper/1111/offlinedb">
+  <ID class="oracle.javatools.db.IdentifierBasedID">
+    <identifier class="java.lang.String">ede6c583-d164-424f-b56b-def03b3838a5</identifier>
+  </ID>
+  <name>EMP</name>
+  <columns>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e92f3c5d-1d19-4c85-89f9-7d65941f613c</identifier>
+      </ID>
+      <name>EMPNO</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">81fb913f-014a-4749-a522-9faf65c69acd</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">4</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>EMPNO</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>EMP</name>
+                  <identifier class="java.math.BigDecimal">4910298</identifier>
+                  <schemaName>GSUI</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>true</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>EMPNO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>EMP</name>
+              <identifier class="java.math.BigDecimal">4910298</identifier>
+              <schemaName>GSUI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">41b47244-a79a-4e7b-801d-16ef39546948</identifier>
+      </ID>
+      <name>ENAME</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">1a28cb2c-fb0a-4f69-9c7d-5594f16320de</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">10</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>ENAME</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>EMP</name>
+                  <identifier class="java.math.BigDecimal">4910298</identifier>
+                  <schemaName>GSUI</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>ENAME</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>EMP</name>
+              <identifier class="java.math.BigDecimal">4910298</identifier>
+              <schemaName>GSUI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">83b7272c-b7db-435a-9ed6-380ba7902e0d</identifier>
+      </ID>
+      <name>JOB</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">cdcb084e-0df0-4552-ba16-31f3fb5a356a</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>size</key>
+            <value class="java.lang.Long">9</value>
+          </entry>
+          <entry>
+            <key>unit</key>
+            <value class="java.lang.String">BYTE</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.Oracle9i</providerClass>
+          <typeName>VARCHAR2</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>JOB</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>EMP</name>
+                  <identifier class="java.math.BigDecimal">4910298</identifier>
+                  <schemaName>GSUI</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>JOB</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>EMP</name>
+              <identifier class="java.math.BigDecimal">4910298</identifier>
+              <schemaName>GSUI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">25576dc5-fc17-478d-8bcb-a6331a58bf10</identifier>
+      </ID>
+      <name>MGR</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">0cdf4a23-c0e9-49ca-a295-67d928601898</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">4</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>MGR</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>EMP</name>
+                  <identifier class="java.math.BigDecimal">4910298</identifier>
+                  <schemaName>GSUI</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>MGR</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>EMP</name>
+              <identifier class="java.math.BigDecimal">4910298</identifier>
+              <schemaName>GSUI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">cfcdad38-3e6c-4d0c-820c-d58e87f4293f</identifier>
+      </ID>
+      <name>HIREDATE</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">5e33d7ee-ced0-42c8-ae1b-c0b1c72cf3ec</identifier>
+        </ID>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>DATE</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>HIREDATE</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>EMP</name>
+                  <identifier class="java.math.BigDecimal">4910298</identifier>
+                  <schemaName>GSUI</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>HIREDATE</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>EMP</name>
+              <identifier class="java.math.BigDecimal">4910298</identifier>
+              <schemaName>GSUI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">9cdbf1f5-ed81-4bab-9bb0-4c46716fc652</identifier>
+      </ID>
+      <name>SAL</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">f71b58aa-830f-4de8-8c41-d21d80625d3e</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">7</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">2</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>SAL</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>EMP</name>
+                  <identifier class="java.math.BigDecimal">4910298</identifier>
+                  <schemaName>GSUI</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>SAL</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>EMP</name>
+              <identifier class="java.math.BigDecimal">4910298</identifier>
+              <schemaName>GSUI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">1c10ea9a-2917-47c5-92c5-d26c4aee89bb</identifier>
+      </ID>
+      <name>COMM</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">0913c051-d10f-474e-882a-3ab578d9a14c</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">7</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">2</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>COMM</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>EMP</name>
+                  <identifier class="java.math.BigDecimal">4910298</identifier>
+                  <schemaName>GSUI</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>COMM</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>EMP</name>
+              <identifier class="java.math.BigDecimal">4910298</identifier>
+              <schemaName>GSUI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+    <column>
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">e26de353-dcd4-48a3-bb72-9d868d4cd096</identifier>
+      </ID>
+      <name>DEPTNO</name>
+      <dataTypeUsage class="oracle.javatools.db.datatypes.PredefinedDataTypeUsage">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">1594548a-afc6-40dd-9b4a-7f3ebb0749ec</identifier>
+        </ID>
+        <attributeValues>
+          <entry>
+            <key>precision</key>
+            <value class="java.lang.String">2</value>
+          </entry>
+          <entry>
+            <key>scale</key>
+            <value class="java.lang.Long">0</value>
+          </entry>
+        </attributeValues>
+        <dataTypeID class="oracle.javatools.db.datatypes.DataTypeID">
+          <providerClass>oracle.javatools.db.ora.OracleDatabaseImpl</providerClass>
+          <typeName>NUMBER</typeName>
+        </dataTypeID>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>DEPTNO</name>
+                <parent class="oracle.javatools.db.ReferenceID">
+                  <name>EMP</name>
+                  <identifier class="java.math.BigDecimal">4910298</identifier>
+                  <schemaName>GSUI</schemaName>
+                  <type>TABLE</type>
+                </parent>
+                <type>COLUMN</type>
+              </parent>
+              <type>DataTypeUsage</type>
+            </value>
+          </entry>
+        </properties>
+      </dataTypeUsage>
+      <notNull>false</notNull>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>DEPTNO</name>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>EMP</name>
+              <identifier class="java.math.BigDecimal">4910298</identifier>
+              <schemaName>GSUI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <type>COLUMN</type>
+          </value>
+        </entry>
+      </properties>
+    </column>
+  </columns>
+  <constraints>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">c76b3a70-ee95-4639-bd48-936783f58252</identifier>
+      </ID>
+      <name>EMP_FOREIGN_KEY1</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>DEPTNO</name>
+          <identifier class="java.lang.String">e26de353-dcd4-48a3-bb72-9d868d4cd096</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>EMP</name>
+            <identifier class="java.lang.String">ede6c583-d164-424f-b56b-def03b3838a5</identifier>
+            <schemaName>GSUI</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>GSUI</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>EMP_FOREIGN_KEY1</name>
+            <childObjectNames>
+              <childObjectName>DEPTNO</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>EMP</name>
+              <identifier class="java.math.BigDecimal">4910298</identifier>
+              <schemaName>GSUI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>DEPT_PRIMARY_KEY1</name>
+        <identifier class="java.lang.String">351f6520-c034-46bd-9d97-1733c1ca4483</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>DEPT</name>
+          <identifier class="java.lang.String">e435f25a-587e-4db8-b9d5-569d9b802da6</identifier>
+          <schemaName>GSUI</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>GSUI</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.FKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">da8e3d87-3f8f-4ab4-a582-13cba9d43d71</identifier>
+      </ID>
+      <name>MGR_FOREIGN_KEY1</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>MGR</name>
+          <identifier class="java.lang.String">25576dc5-fc17-478d-8bcb-a6331a58bf10</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>EMP</name>
+            <identifier class="java.lang.String">ede6c583-d164-424f-b56b-def03b3838a5</identifier>
+            <schemaName>GSUI</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>GSUI</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <deleteMode>0</deleteMode>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>MGR_FOREIGN_KEY1</name>
+            <childObjectNames>
+              <childObjectName>MGR</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>EMP</name>
+              <identifier class="java.math.BigDecimal">4910298</identifier>
+              <schemaName>GSUI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>FKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+      <referenceID class="oracle.javatools.db.IdentifierBasedID">
+        <name>EMP_PRIMARY_KEY1</name>
+        <identifier class="java.lang.String">9443062c-03dc-4630-a7d4-83de4fdeb002</identifier>
+        <parent class="oracle.javatools.db.IdentifierBasedID">
+          <name>EMP</name>
+          <identifier class="java.lang.String">ede6c583-d164-424f-b56b-def03b3838a5</identifier>
+          <schemaName>GSUI</schemaName>
+          <type>TABLE</type>
+        </parent>
+        <schemaName>GSUI</schemaName>
+        <type>CONSTRAINT</type>
+      </referenceID>
+    </constraint>
+    <constraint class="oracle.javatools.db.PKConstraint">
+      <ID class="oracle.javatools.db.IdentifierBasedID">
+        <identifier class="java.lang.String">9443062c-03dc-4630-a7d4-83de4fdeb002</identifier>
+      </ID>
+      <name>EMP_PRIMARY_KEY1</name>
+      <columnIDs>
+        <columnID class="oracle.javatools.db.IdentifierBasedID">
+          <name>EMPNO</name>
+          <identifier class="java.lang.String">e92f3c5d-1d19-4c85-89f9-7d65941f613c</identifier>
+          <parent class="oracle.javatools.db.IdentifierBasedID">
+            <name>EMP</name>
+            <identifier class="java.lang.String">ede6c583-d164-424f-b56b-def03b3838a5</identifier>
+            <schemaName>GSUI</schemaName>
+            <type>TABLE</type>
+          </parent>
+          <schemaName>GSUI</schemaName>
+          <type>COLUMN</type>
+        </columnID>
+      </columnIDs>
+      <enabled>true</enabled>
+      <properties>
+        <entry>
+          <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+          <value class="oracle.javatools.db.ReferenceID">
+            <name>EMP_PRIMARY_KEY1</name>
+            <childObjectNames>
+              <childObjectName>EMPNO</childObjectName>
+            </childObjectNames>
+            <parent class="oracle.javatools.db.ReferenceID">
+              <name>EMP</name>
+              <identifier class="java.math.BigDecimal">4910298</identifier>
+              <schemaName>GSUI</schemaName>
+              <type>TABLE</type>
+            </parent>
+            <subType>PKConstraint</subType>
+            <type>CONSTRAINT</type>
+          </value>
+        </entry>
+      </properties>
+    </constraint>
+  </constraints>
+  <properties>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_CONNECTION</key>
+      <value class="java.lang.String">Connection1</value>
+    </entry>
+    <entry>
+      <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+      <value class="oracle.javatools.db.ReferenceID">
+        <name>EMP</name>
+        <identifier class="java.math.BigDecimal">4910298</identifier>
+        <schemaName>GSUI</schemaName>
+        <type>TABLE</type>
+      </value>
+    </entry>
+    <entry>
+      <key>OracleStorageProperties</key>
+      <value class="oracle.javatools.db.ora.OracleStorageProperties">
+        <ID class="oracle.javatools.db.IdentifierBasedID">
+          <identifier class="java.lang.String">99d44090-77f2-48d2-9937-5752ebb02fd9</identifier>
+        </ID>
+        <bufferMode>DEFAULT</bufferMode>
+        <initialExtent>65536</initialExtent>
+        <initrans>1</initrans>
+        <logging>true</logging>
+        <maxExtent>2147483645</maxExtent>
+        <minExtent>1</minExtent>
+        <percentFree>10</percentFree>
+        <properties>
+          <entry>
+            <key>OfflineDBConstants.IMPORT_SOURCE_ID</key>
+            <value class="oracle.javatools.db.ReferenceID">
+              <parent class="oracle.javatools.db.ReferenceID">
+                <name>EMP</name>
+                <identifier class="java.math.BigDecimal">4910298</identifier>
+                <schemaName>GSUI</schemaName>
+                <type>TABLE</type>
+              </parent>
+              <type>OracleStorageProperties</type>
+            </value>
+          </entry>
+        </properties>
+        <tablespaceID class="oracle.javatools.db.ReferenceID">
+          <name>USERS</name>
+          <type>TABLESPACE</type>
+        </tablespaceID>
+      </value>
+    </entry>
+    <entry>
+      <key>TableType</key>
+      <value class="oracle.javatools.db.Table$TableType">NORMAL</value>
+    </entry>
+    <entry>
+      <key>Timestamp</key>
+    </entry>
+  </properties>
+  <schema>
+    <name>GSUI</name>
+  </schema>
+</table>
